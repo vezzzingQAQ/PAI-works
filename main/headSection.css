@@ -1,0 +1,36 @@
+/********************************************/
+.fullScreen{
+    width: 100vw;
+    height: 100vh;
+}
+/********************************************/
+.head_section{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.head_section>.center{
+    position: absolute;
+    width: max-content;
+    height: min-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_section img{
+    margin-right: 30px;
+    text-align: center;
+    width: 85px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.head_section>.center>.mainTitle{
+    text-align: center;
+    letter-spacing: 14px;
+    font-size: 20px;
+    list-style: none;
+}

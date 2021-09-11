@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パイ</title>
+    <link rel="stylesheet" type="text/css" href="headSection.css">
+    <link rel="stylesheet" type="text/css" href="contentSection.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            overflow-x: hidden;
+        }
+    </style>
+    <script>
+        function addProject(id,url,cw,ch,container){
+            var textTemp="";
+            textTemp+="<div class=\"project\" style=\"width: "+cw+"vw;height: "+ch+"vw;\">";
+            textTemp+="<a href=\""+url+"\"><div class=\"img\" style=\"";
+            textTemp+="background:url('pictures/projects/"+id+".jpg');";
+            textTemp+="width: 100%;";
+            textTemp+="height: 100%;";
+            textTemp+="background-size: cover;";
+            textTemp+="background-repeat: no-repeat;";
+            textTemp+="background-position: center;";
+            textTemp+="\"></div></a>";
+            textTemp+="</div>";
+            container.innerHTML+=textTemp;
+        }
+        window.onload=function(){
+            var projectContainer=document.querySelector(".content_section");
+            addProject("pj1","#",20,20,projectContainer);
+            addProject("pj2","#",20,20,projectContainer);
+            addProject("pj3","#",20,20,projectContainer);
+        }
+    </script>
+</head>
+<body>
+    <section class="head_section fullScreen">
+        <div class="center">
+            <img src="pictures/lg1.png">
+            <ul class="mainTitle">
+                <li>パ</li>
+                <li>イ</li>
+                <li>-</li>
+                <li>s</li>
+                <li>t</li>
+                <li>u</li>
+                <li>d</li>
+                <li>i</li>
+                <li>o</li>
+            </ul>    
+        </div>
+    </section>
+    <section class="content_section">
+
+    </section>
+    <section class="footer_section">
+
+    </section>
+</body>
+</html>

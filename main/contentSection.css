@@ -1,0 +1,14 @@
+.content_section{
+    width: 100vh;
+    display: flex;
+}
+.content_section .project{
+    display: flexbox;
+    overflow: hidden;
+}
+.content_section .project .img{
+    transition: 0.3s ease-in-out;
+}
+.content_section .project .img:hover{
+    transform: scale(1.2);
+}
